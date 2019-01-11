@@ -1246,7 +1246,7 @@ i {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    height: 90vw;
+    height: 100%;
     border: 2px solid #106d65;
     background: rgba(0, 0, 0, 0.9);
     padding: 20px;

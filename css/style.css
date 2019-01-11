@@ -1901,7 +1901,7 @@ i {
   .mainNav__list {
     position: absolute;
     top: 0px;
-    left: 40%;
+    left: 30%;
     right: 0;
     height: 70px;
     width: auto;
@@ -1921,7 +1921,7 @@ i {
   .mainNav__list.off {
     position: absolute;
     top: 0px;
-    left: 40%;
+    left: 30%;
     right: 0;
     height: 70px;
     width: auto;

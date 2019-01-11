@@ -1263,6 +1263,7 @@ i{
             justify-content: space-around;
             list-style: none;
             transform: translateX(0%);
+            background: transparent;
         }
         .mainNav__list.off{
             position: absolute;
@@ -1276,6 +1277,7 @@ i{
             justify-content: space-around;
             list-style: none;
             transform: translateX(0%);
+            background: transparent;
         }
         
         .mainNav__item{
@@ -1669,6 +1671,7 @@ i{
     justify-content: space-around;
     list-style: none;
     transform: translateX(0%);
+ 
 }
 
 .mainNav__item{

@@ -1465,6 +1465,7 @@ i {
     list-style: none;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
+    background: transparent;
   }
   .mainNav__list.off {
     position: absolute;
@@ -1485,6 +1486,7 @@ i {
     list-style: none;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
+    background: transparent;
   }
   .mainNav__item {
     display: block;

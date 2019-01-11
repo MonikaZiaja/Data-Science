@@ -808,6 +808,38 @@ i {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .mainNav__item.mobile {
+    display: block;
+    line-height: 50px;
+    padding: 10px 10px;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 500;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  .mainNav__list {
+    position: absolute;
+    top: 0px;
+    left: 40%;
+    right: 0;
+    height: 70px;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    list-style: none;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
   .mainNav__list.off {
     position: absolute;
     top: 0px;
@@ -1380,6 +1412,75 @@ i {
 }
 
 @media (orientation: landscape) and (min-width: 1280px) {
+  .mainNav {
+    height: 70px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .mainNav__list {
+    position: absolute;
+    top: 0px;
+    left: 30%;
+    right: 0;
+    height: 70px;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    list-style: none;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .mainNav__list.off {
+    position: absolute;
+    top: 0px;
+    left: 30%;
+    right: 0;
+    height: 70px;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    list-style: none;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .mainNav__item {
+    display: block;
+    line-height: 50px;
+    padding: 10px 10px;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 500;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  .mainNav__item:hover {
+    color: white;
+    background: rgba(24, 148, 138, 0.7);
+  }
   .mainHeader__box {
     padding: 25vh;
     display: -webkit-box;

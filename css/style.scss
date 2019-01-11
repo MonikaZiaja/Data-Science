@@ -682,8 +682,32 @@ i{
     justify-content: space-between;
 }
 
-
-
+.mainNav__item.mobile{
+    display: block;
+    line-height: 50px;
+    padding: 10px 10px;
+    font-size: 16px;
+    color: white;
+   
+    // color: $collBlue;
+    letter-spacing: 2px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.mainNav__list{
+    position: absolute;
+    top:0px;
+    left: 40%;
+    right: 0;
+    height: 70px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    transform: translateX(0%);
+}
 .mainNav__list.off{
     position: absolute;
     top:0px;
@@ -1193,6 +1217,64 @@ i{
 }
 }
 @media(orientation:landscape) and (min-width:1280px){
+    .mainNav{
+        height: 70px;
+        width: 100%;
+        background: $blackO70 ;
+        // background: white ;
+        // padding: 0 10vw;
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    .mainNav__list{
+        position: absolute;
+        top:0px;
+        left: 30%;
+        right: 0;
+        height: 70px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        transform: translateX(0%);
+    }
+    .mainNav__list.off{
+        position: absolute;
+        top:0px;
+        left: 30%;
+        right: 0;
+        height: 70px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        transform: translateX(0%);
+    }
+    
+    .mainNav__item{
+        display: block;
+        line-height: 50px;
+        padding: 10px 10px;
+        font-size: 16px;
+        color: white;
+       
+        // color: $collBlue;
+        letter-spacing: 2px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        &:hover{
+            color: white;
+            background: $collBlueO70;
+    
+        }
+    }
     .mainHeader__box{
     
         padding: 25vh;

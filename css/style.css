@@ -834,6 +834,10 @@ i {
     color: white;
     background: rgba(24, 148, 138, 0.7);
   }
+  .mobile {
+    display: block;
+    width: 100vw !important;
+  }
   .mainNav__logo {
     display: -webkit-box;
     display: -ms-flexbox;

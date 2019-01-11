@@ -42,10 +42,10 @@ initstepsClickHandlers();
 
 
 //   menu mobile
-const arrowDown = document.querySelectorAll('.fa-bars, .fa-times');
+const arrowDown = document.querySelectorAll('.fa-bars, .fa-times, .mobile');
 
 const offElements__arrowDown = document.querySelectorAll('.arrowUp, .fa-times, .fa-bars, .mainNav__list')
-
+const mobileElements = document.querySelectorAll('.mainNav__item')
 
 for (let i = 0; i < arrowDown.length; i++) {
     arrowDown[i].onclick = function() {
@@ -53,15 +53,23 @@ for (let i = 0; i < arrowDown.length; i++) {
             element.classList.toggle('off');
             
         })
+        mobileElements.forEach(function(element) {
+            element.classList.toggle('mobile');
+            
+        })
     };
 
 }
 
+// $('.mainNav__link--arrow, .mainNav__link--off').on('click', addOffClass);
 
-
-      
-const skillCircles = document.querySelectorAll('.skills__circle');
-const skillsDescribe = document.querySelectorAll('.skills__describe');
+// Scroll
+$('.mainNav__item').on('click', function () {
+    const goToSection = "[data-section=" + $(this).attr('id') + "]";
+    $('body, html').animate({
+        scrollTop: $(goToSection).offset().top - 64
+    })
+})
 // arrow scroll
 $(window).scroll(() => {
     var wScroll = $(this).scrollTop();
@@ -79,6 +87,6 @@ $('.mainHeader__btn--transparent').on('click', function(){
     var y = $(window).scrollTop();
  $('html, body').animate({ scrollTop: y + window.innerHeight/1.2})
 })
-$('.arrowUp').on("click",function(){
+$('.arrowUp, .mainNav__logo').on("click",function(){
     $(window).scrollTop(0);
 });

@@ -865,11 +865,11 @@ i {
             transform: translateX(-100%);
   }
   .mainNav__item {
-    line-height: 30px;
+    line-height: 20px;
     padding: 10px 10px;
     color: white;
     letter-spacing: 2px;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 500;
     cursor: pointer;
     -webkit-transition: all .3s ease-in-out;

@@ -42,7 +42,7 @@ initstepsClickHandlers();
 
 
 //   menu mobile
-const arrowDown = document.querySelectorAll('.fa-bars, .fa-times, .mobile');
+const arrowDown = document.querySelectorAll('.fa-bars, .fa-times, .mainNav__item.mobile');
 
 const offElements__arrowDown = document.querySelectorAll('.arrowUp, .fa-times, .fa-bars, .mainNav__list')
 const mobileElements = document.querySelectorAll('.mainNav__item')
@@ -69,6 +69,10 @@ $('.mainNav__item').on('click', function () {
     $('body, html').animate({
         scrollTop: $(goToSection).offset().top - 64
     })
+    offElements__arrowDown.forEach(function(element) {
+        element.classList.toggle('off');
+        
+    })
 })
 // arrow scroll
 $(window).scroll(() => {
@@ -87,6 +91,6 @@ $('.mainHeader__btn--transparent').on('click', function(){
     var y = $(window).scrollTop();
  $('html, body').animate({ scrollTop: y + window.innerHeight/1.2})
 })
-$('.arrowUp, .mainNav__logo').on("click",function(){
+$('.arrowUp, .mainNav__logo--uwr').on("click",function(){
     $(window).scrollTop(0);
 });

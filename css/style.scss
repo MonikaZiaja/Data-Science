@@ -6,6 +6,7 @@ $colLight: #ddd;
 $coldBlue: #106d65;
 $coldBlue: rgb(1, 50, 75);
 $coldBlue: rgb(1, 60, 75);
+$colvdBlue: rgb(1, 24, 31);
 $collBlue:  rgb(24, 148, 138);
 $collBlue:  rgb(0, 120, 153);
 $collBlueO70:  rgba(24, 148, 138,.7);
@@ -179,7 +180,7 @@ i{
 }
 .title{
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 300;
     padding: 30px 0px;
     color: white;
@@ -499,8 +500,8 @@ i{
     background: $coldBlue;
 }
 .section__contact{
-    background: #000;
-    min-height: 50vh;
+    background: $colvdBlue;
+    min-height: 60vh;
 }
 
 .sectionLecturers{
@@ -589,9 +590,15 @@ i{
     color: white;
     transform: translateX(calc(50vw - 50%));
     margin: 50px 0;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    &:hover{
+        // color: $coldBlue;
+        background: $whiteO30;
+    }
 }
 .section__contact{
-    min-height: 50vh;
+    min-height: 60vh;
     
 }
 .title__contact{
@@ -631,11 +638,15 @@ i{
 }
 .crFooter{
     
-    padding: 20px;
-    font-size: 16px;
+    padding: 15px;
+    font-size: 12px;
     background: #000;
     color: $whiteO50;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 @media(orientation:landscape) and (min-width:640px){
     .fa-times{
@@ -812,6 +823,7 @@ i{
         &:hover{
             background: $coldOrangeO70;
             color: white;
+            
     
         }
     }
@@ -1106,8 +1118,9 @@ i{
         background: $coldBlue;
     }
     .section__contact{
-        background: #000;
-        min-height: 50vh;
+        // background: #000;
+        min-height: 60vh;
+        padding-bottom: 10vh;
     }
     
     .sectionLecturers{
@@ -1215,6 +1228,7 @@ i{
         justify-content: space-between;
         width: 100%;
         margin: auto;
+        margin-bottom:10vh;
     }
     .contactFont{
         display: block;
@@ -1238,14 +1252,17 @@ i{
     }
     .crFooter{
         
-        padding: 20px;
-        font-size: 16px;
-        background: #000;
-        color: $whiteO50;
-        text-align: center;
+        // padding: 20px;
+        // font-size: 16px;
+        // background: #000;
+        // color: $whiteO50;
+        // text-align: center;
     }
     }
     @media(orientation:landscape) and (min-width:1280px){
+        .arrowUp.off{
+            display: block !important;
+        }
         .mainNav{
             height: 70px;
             width: 100%;
@@ -1340,7 +1357,35 @@ i{
             text-transform: uppercase;
             font-weight: 300;
         }
+        .btn--transparent{
+            display: block;
+            // margin: 100px;
+            transform: translate(calc(50vw - 50%),-10vh);
+            background: transparent;
+            border: 2px solid $collOrange;
+            color: $collOrange;
+            transition: all .3s ease-in-out; 
+            // text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 20px;
+            padding: 20px 30px;
+            cursor: pointer;
+            background: $blackO50;
+            border-radius: 5px;
+            outline: none;
+           
         
+            &:hover{
+                background: $coldOrangeO70;
+                color: white;
+                animation-name: bounce;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        
+            }
+        }
         .mainHeader{
             z-index: -1;
             height: 90vh;
@@ -1554,7 +1599,9 @@ i{
             color:$collOrange;
             font-size: 50px;
             cursor: pointer;
-            
+            &:hover{
+                color:$coldOrange;
+            }
         }
         .fa-user-graduate.active{
             color: white;
@@ -1588,6 +1635,17 @@ i{
             
             
         }
+        @keyframes bounce {
+            0%, 100%, 20%, 50%, 80% {
+                transform:         translateX(calc(50vw - 50%));
+            }
+            40% {
+                transform:         translate(calc(50vw - 50% - 20px));
+            }
+            60% {
+                transform:         translate(calc(50vw - 50% - 10px));
+            }
+        }
     }
 @media(orientation:landscape) and (min-width:1340px){
     .fa-bars{
@@ -1615,6 +1673,9 @@ i{
         background: $collBlue;
     }
 
+}
+.arrowUp.off{
+    display:block !important;
 }
 .fa-arrow-up{
     color: white;
@@ -1761,6 +1822,11 @@ i{
     &:hover{
         background: $coldOrangeO70;
         color: white;
+        animation-name: bounce;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
 
     }
 }
@@ -1911,6 +1977,9 @@ i{
     color:$collOrange;
     font-size: 50px;
     cursor: pointer;
+    &:hover{
+        color:$coldOrange;
+    }
     
 }
 .fa-user-graduate.active{
@@ -2045,8 +2114,8 @@ i{
     background: $coldBlue;
 }
 .section__contact{
-    background: #000;
-    min-height: 50vh;
+    // background: #000
+    min-height: 60vh;
 }
 
 .sectionLecturers{
@@ -2169,11 +2238,11 @@ i{
     display: none;
 }
 .crFooter{
-    padding: 20px;
-    font-size: 16px;
-    background: #000;
-    color: $whiteO50;
-    text-align: center;
+    // padding: 20px;
+    // font-size: 16px;
+    // background: #000;
+    // color: $whiteO50;
+    // text-align: center;
 }
 }
 

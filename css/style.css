@@ -393,7 +393,7 @@ i {
 }
 
 .steps__title {
-  font-size: 60px;
+  font-size: 40px;
   color: white;
   text-align: center;
 }
@@ -1141,7 +1141,7 @@ i {
     padding: 20px;
   }
   .steps__title {
-    font-size: 60px;
+    font-size: 40px;
     color: white;
     text-align: center;
   }
@@ -1151,7 +1151,7 @@ i {
   }
   .studyDegrees__step {
     width: 30vw;
-    height: 20vh;
+    height: 15vh;
     border: 1px solid white;
     border-bottom: none;
     border-right: none;
@@ -1170,12 +1170,12 @@ i {
             justify-content: center;
   }
   .studyDegrees__step--2 {
-    -webkit-transform: translateY(calc(-20vh + 1px));
-            transform: translateY(calc(-20vh + 1px));
+    -webkit-transform: translateY(calc(-15vh + 1px));
+            transform: translateY(calc(-15vh + 1px));
   }
   .studyDegrees__step--3 {
-    -webkit-transform: translateY(calc(-40vh + 2px));
-            transform: translateY(calc(-40vh + 2px));
+    -webkit-transform: translateY(calc(-30vh + 2px));
+            transform: translateY(calc(-30vh + 2px));
   }
   .fa-user-graduate {
     -webkit-transform: translateY(-6vw);

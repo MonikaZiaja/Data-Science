@@ -336,7 +336,7 @@ i{
 
 .steps__title{
     // background: rgba(0, 0, 0, 0.8);
-    font-size: 60px;
+    font-size: 40px;
     color: white;
     text-align: center;
 }
@@ -968,7 +968,7 @@ i{
     
     .steps__title{
         // background: rgba(0, 0, 0, 0.8);
-        font-size: 60px;
+        font-size: 40px;
         color: white;
         text-align: center;
     }
@@ -978,7 +978,7 @@ i{
     }
     .studyDegrees__step{
         width: 30vw;
-        height: 20vh;
+        height: 15vh;
         border: 1px solid white;
         border-bottom: none;
         border-right: none;
@@ -989,10 +989,10 @@ i{
     }
     
     .studyDegrees__step--2{
-        transform:translateY(calc(-20vh + 1px));
+        transform:translateY(calc(-15vh + 1px));
     }
     .studyDegrees__step--3{
-        transform:translateY(calc(-40vh + 2px));
+        transform:translateY(calc(-30vh + 2px));
     }
     .fa-user-graduate{
         transform: translateY($transleateSteps);

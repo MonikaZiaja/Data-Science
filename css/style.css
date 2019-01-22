@@ -1100,7 +1100,7 @@ i {
   }
   .steps__img {
     width: 100vw;
-    height: 2000vh;
+    height: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

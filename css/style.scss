@@ -652,7 +652,7 @@ i{
     align-items: center;
     flex-wrap: wrap;
 }
-@media(orientation:landscape) and (min-width:640px){
+@media(orientation:landscape) and (min-width:400px){
     .fa-times{
         position: absolute;
         top: 15px;
